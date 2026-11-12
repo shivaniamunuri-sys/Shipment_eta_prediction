@@ -1,0 +1,46 @@
+{
+  "dataset_rows": 300,
+  "train_rows": 225,
+  "test_rows": 75,
+  "regression": {
+    "MAE_hours": 5.183808398650366,
+    "RMSE_hours": 6.808648548450793,
+    "R2": 0.8360696597382438
+  },
+  "classification": {
+    "accuracy": 0.9733333333333334,
+    "precision": 0.9722222222222222,
+    "recall": 1.0,
+    "F1": 0.9859154929577465,
+    "ROC_AUC": 1.0,
+    "positive_class_threshold_hours": 24,
+    "probability_threshold": 0.5
+  },
+  "feature_importance_top5": [
+    {
+      "feature": "cumulative_observed_delay_hours",
+      "importance_mean": 4.2574693617948975,
+      "importance_std": 0.6628922852465169
+    },
+    {
+      "feature": "port_processing_delay_hours",
+      "importance_mean": 1.4609776751123793,
+      "importance_std": 0.2604848163097867
+    },
+    {
+      "feature": "port_delay_congestion_interaction",
+      "importance_mean": 1.232181356704326,
+      "importance_std": 0.25543595712200506
+    },
+    {
+      "feature": "port_congestion_index",
+      "importance_mean": 1.0525226170732775,
+      "importance_std": 0.2406054363247921
+    },
+    {
+      "feature": "origin_departure_delay_hours",
+      "importance_mean": 0.5723670750137811,
+      "importance_std": 0.17033476551776056
+    }
+  ]
+}
